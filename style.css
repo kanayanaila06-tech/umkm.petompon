@@ -1,0 +1,111 @@
+:root {
+    --primary: #a67c52; /* Warna Cokelat Earth Tone */
+    --accent: #7b1d1d;  /* Warna Maroon Semarang */
+    --bg: #fdfaf5;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body { background-color: var(--bg); color: #333; overflow-x: hidden; }
+
+/* Navbar & Mobile Menu */
+.navbar {
+    display: flex; justify-content:space-between; align-items: center;
+    padding: 15px 8%; background: var(--accent);
+    position: sticky; top: 0; z-index: 1000; color: rgb(255, 255, 255);
+    align-content: center;
+}
+
+.logo span { font-weight: 700; color: var(--primary);
+
+}
+
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+
+.btn-contact {
+    background: var(--white); color: var(--accent);
+    padding: 8px 20px; border-radius: 50px; text-decoration: none; font-weight: 600;
+}
+
+/* Transisi Muncul dari Belakang ke Depan */
+.reveal {
+    opacity: 0;
+    transform: scale(0.6) translateY(30px);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Hero Section */
+.hero {
+    display: flex; align-items: center; justify-content: center;
+    padding: 60px 8%; flex-wrap: wrap; gap: 30px;
+    text-align: center;
+}
+
+.hero-text h1 { font-size: 3rem; color: var(--accent); margin: 10px 0; text-align:center;}
+.hero-img .circle-frame {
+    width: 350px; height: 350px; border-radius: 50%;
+    overflow: hidden; border: 8px solid rgb(255, 255, 255); box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.hero-img img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Grid Katalog */
+.container { padding: 0 8%; }
+.section { padding: 40px 0; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+
+.cert-card { padding: 0; overflow: hidden; border-radius: 15px; background: white; text-align:center;}
+.cert-card img { width: 100%; height: 200px; object-fit: cover; }
+.cert-title { padding: 15px; text-align: center; font-weight: 600; text-align:center;}
+
+.media-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: center;  }
+.media-placeholder { background: #ffffff; width:250px; 250px; border-radius: 15px; display: flex; align-items: center; justify-content: center;width:"100%"; align-items: center; margin: 70px ;}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Gunakan JS untuk mengaktifkan hamburger */
+    .hero { text-align: center; justify-content: center; }
+    .media-container { grid-template-columns: 1fr; }
+}
+/* Menghilangkan format link default */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Efek Hover Kotak */
+.card-link:hover .cert-card {
+    transform: translateY(-10px);
+    border: 2px solid var(--accent);
+}
+
+/* Gaya Detail Box */
+.detail-item {
+    margin-bottom: 25px;
+    border-left: 6px solid var(--accent); /* Garis dekorasi samping */
+    scroll-margin-top: 100px; /* Jeda agar tidak tertutup navbar saat scroll */
+    transition: background 0.3s;
+}
+
+.detail-item h3 {
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+/* Responsif Grid */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
