@@ -3,169 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMKM Petompon</title>
+    <title>UMKM Macan Peto | Kelurahan Petompon</title>
+    <meta name="description" content="Website UMKM Macan Peto Kelurahan Petompon Kota Semarang.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">UMKM<span> Kelurahan Petompon</span></div>
-        <div class="menu-toggle" id="mobile-menu">
+        <a href="#home" class="logo">
+            <span class="logo-main">UMKM</span>
+            <span class="logo-sub">Kelurahan Petompon</span>
+        </a>
+
+        <button class="menu-toggle" id="mobile-menu" aria-label="Buka menu" aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
-        <ul class="nav-links">
+        </button>
+
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">Tentang Kami</a></li>
-            <li><a href="#katalog"> menu</a></li>
-            <li><a href="#contact" class="mobile-contact">contact</a></li>
+            <li><a href="#katalog">Menu</a></li>
+            <li><a href="#media">Kegiatan</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+
         <a href="#contact" class="btn-contact">WhatsApp Kami</a>
     </nav>
 
-    <header id="home" class="hero section reveal">
-      <div class="hero">
-      <div class="hero-text">
-            <h1><b>UMKM Macan Peto </b> </h1>
-            <h1><b>Kelurahan Petompon Kota Semarang</b></h1>
-        </div>
-        <div class="hero-img">
-            <div class="circle-frame">
-                <img src="logo.jpg" alt="Produk UMKM">
+    <main>
+        <!-- HERO -->
+        <header id="home" class="hero section reveal">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
 
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <section id="about" class="section reveal">
-            <h2 class="section-title">UMKM Kelurahan Petompon</h2>
-            <div class="card large-box">
-                <p>UMKM Kelurahan Petompon Macan Peto merupakan usaha mikro, kecil, dan menengah yang berlokasi <br>di Kelurahan Petompon, Kecamatan Gajahmungkur Kota Semarang.Usaha ini bergerak dibidang Kuliner<br> dengan menghadirkan produk berkualitas dan harga terjangkau.</p>
-            </div>
-        </section>
-
-        <section id="katalog" class="section reveal">
-            <h2 class="section-title">Produk UMKM</h2>
-            <h><strong>Produk Makanan</strong> </h>
-            <div class="grid-3">
-                <a href="#detail-kuliner" class="card-link">
-                    <div class="card cert-card">
-                        <img src="ceker.jpeg">
-                        <div class="cert-title">Ceker Pedas</div>
-                    </div>
-                </a>
-                
-                <a href="#detail-kegiatan" class="card-link">
-                    <div class="card cert-card">
-                        <img src="kue2.jpeg" alt="Fashion" width="5px" height="30px">
-                        <div class="cert-title">Kue Kering</div>
-                    </div>
-                </a>
-                
-                <a href="#detail-kerajinan" class="card-link">
-                    <div class="card cert-card">
-                        <img src="kue 1.jpeg" alt="Craft">
-                        <div class="cert-title">Kue Kering</div>
-                    </div>
-                </a>
-
-                <a href="#detail-kerajinan" class="card-link">
-                    <div class="card cert-card">
-                        <img src="nastar.jpeg" alt="Craft">
-                        <div class="cert-title">Kue Nastar</div>
-                    </div>
-                </a>
-                <a href="#detail-kerajinan" class="card-link">
-                    <div class="card cert-card">
-                        <img src="pastel.jpeg" alt="Craft">
-                        <div class="cert-title">Pastel Frozen/Matang</div>
-                    </div>
-                </a>
-                </a>
-                <a href="#detail-kerajinan" class="card-link">
-                    <div class="card cert-card">
-                        <img src="pastelkering.jpeg" alt="Craft">
-                        <div class="cert-title">Pastel Kering</div>
-                    </div>
-                </a>
-                <a href="#detail-kerajinan" class="card-link">
-                    <div class="card cert-card">
-                        <img src="peyek2.jpeg" alt="Craft">
-                        <div class="cert-title">Peyek</div>
-                    </div>
-                </a>
-                <a href="#detail-kerajinan" class="card-link">
-                    <div class="card cert-card">
-                        <img src="lanting 1.jpg" alt="Craft">
-                        <div class="cert-title">Lanting</div>
-                    </div>
-                </a>
-            </a>
-                <a href="#detail-kerajinan" class="card-link">
-                    <div class="card cert-card">
-                        <img src="R.jpg" alt="Craft">
-                        <div class="cert-title">Kue Kacang</div>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section id="media" class="section reveal">
-
-                 <h2 class="section-title">KEGIATAN UMKM PETOMPON</h2>
-
-                     <div class="card media-container">
-
-            <!-- Kegiatan 1 -->
-            <div class="media-box">
-                <img src="ibu 1.jpeg" alt="Kegiatan Bazar" width="400" height="250">
-                <h3>Kegiatan Bazar UMKM Kelurahan Petompon</h3>
-                <p> Kegiatan bazar yang dilakukan warga Petompon untuk <br> menjual produk lokal berupa makanan.</p>
-            </div>
-
-            <!-- Kegiatan 2 -->
-            <div class="media-box">
-                <img src="ibu2.jpeg" alt="Kegiatan Pertemuan" width="400" height="250">
-                <h3>Kegiatan Pertemuan UMKM Kelurahan Petompon</h3>
+            <div class="hero-text">
+                <span class="eyebrow">UMKM Lokal • Petompon • Semarang</span>
+                <h1>
+                    <span>UMKM Macan Peto</span>
+                    Kelurahan Petompon Kota Semarang
+                </h1>
                 <p>
-                     Perkumpulan UMKM Kelurahan Petompon Kota Semarang.
+                    Menghadirkan produk kuliner lokal berkualitas dengan cita rasa
+                    yang dekat dengan masyarakat dan harga yang terjangkau.
                 </p>
+
+                <div class="hero-actions">
+                    <a href="#katalog" class="btn-primary">Lihat Produk <span>→</span></a>
+                    <a href="#about" class="btn-secondary">Tentang Kami</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>100%</strong>
+                        <span>Produk Lokal</span>
+                    </div>
+                    <div>
+                        <strong>Petompon</strong>
+                        <span>Kota Semarang</span>
+                    </div>
+                    <div>
+                        <strong>Ramah</strong>
+                        <span>Untuk Semua</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- Kegiatan 3 -->
-            <div class="media-box">
-                <img src="takjil.jpeg" alt="Pembagian Takjil" width="400" height="250">
-                <h3>Kegiatan Pembagian Takjil oleh <br> UMKM Kelurahan Petompon</h3>
-                <p>
-                Pembagian takjil oleh UMKM <br>Kelurahan Petompon dilaksanakan<br>
-                pada bulan Ramadhan 2026.
-                </p>
+            <div class="hero-img">
+                <div class="circle-orbit orbit-one"></div>
+                <div class="circle-orbit orbit-two"></div>
+                <div class="circle-frame">
+                    <img src="logo.jpg" alt="Logo UMKM Macan Peto" loading="eager">
+                </div>
             </div>
+        </header>
 
-            </div>
+        <div class="container">
+            <!-- ABOUT -->
+            <section id="about" class="section reveal">
+                <div class="section-heading">
+                    <span class="eyebrow">Tentang Kami</span>
+                    <h2 class="section-title">UMKM Kelurahan Petompon</h2>
+                    <p class="section-intro">
+                        Kenal lebih dekat dengan UMKM Macan Peto dan produk lokal
+                        yang hadir dari masyarakat Petompon.
+                    </p>
+                </div>
 
+                <div class="about-layout">
+                    <div class="card large-box about-copy">
+                        <span class="card-number">01</span>
+                        <p>
+                            UMKM Kelurahan Petompon Macan Peto merupakan usaha mikro,
+                            kecil, dan menengah yang berlokasi di Kelurahan Petompon,
+                            Kecamatan Gajahmungkur Kota Semarang. Usaha ini bergerak
+                            di bidang kuliner dengan menghadirkan produk berkualitas
+                            dan harga terjangkau.
+                        </p>
+                    </div>
+
+                    <div class="about-highlight card">
+                        <div class="highlight-icon">✦</div>
+                        <h3>Dari Warga, Untuk Warga</h3>
+                        <p>
+                            Mendukung produk lokal sekaligus memperkuat potensi
+                            ekonomi masyarakat Kelurahan Petompon.
+                        </p>
+                    </div>
+                </div>
             </section>
+
+            <!-- KATALOG -->
+            <section id="katalog" class="section reveal">
+                <div class="section-heading">
+                    <span class="eyebrow">Katalog Produk</span>
+                    <h2 class="section-title">Produk UMKM</h2>
+                    <p class="section-intro">
+                        Pilihan makanan lokal yang bisa kamu lihat dan pesan melalui kontak UMKM.
+                    </p>
+                </div>
+
+                <div class="product-heading">
+                    <span class="product-heading-line"></span>
+                    <h3>Produk Makanan</h3>
+                    <span class="product-heading-line"></span>
+                </div>
+
+                <div class="grid-products">
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="ceker.jpeg" alt="Ceker Pedas" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Kuliner</span>
+                                <h3>Ceker Pedas</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="kue2.jpeg" alt="Kue Kering" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Kue</span>
+                                <h3>Kue Kering</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="kue 1.jpeg" alt="Kue Kering" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Kue</span>
+                                <h3>Kue Kering</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="nastar.jpeg" alt="Kue Nastar" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Kue</span>
+                                <h3>Kue Nastar</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="pastel.jpeg" alt="Pastel Frozen atau Matang" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Frozen</span>
+                                <h3>Pastel Frozen / Matang</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="pastelkering.jpeg" alt="Pastel Kering" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Snack</span>
+                                <h3>Pastel Kering</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="peyek2.jpeg" alt="Peyek" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Snack</span>
+                                <h3>Peyek</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="lanting 1.jpg" alt="Lanting" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Snack</span>
+                                <h3>Lanting</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="product-card reveal-card">
+                        <a href="#detail-kuliner" class="card-link">
+                            <div class="product-image">
+                                <img src="R.jpg" alt="Kue Kacang" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <span class="product-tag">Kue</span>
+                                <h3>Kue Kacang</h3>
+                                <span class="product-link">Lihat informasi →</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- KEGIATAN -->
+            <section id="media" class="section reveal">
+                <div class="section-heading">
+                    <span class="eyebrow">Aktivitas</span>
+                    <h2 class="section-title">Kegiatan UMKM Petompon</h2>
+                    <p class="section-intro">
+                        Dokumentasi kegiatan dan kebersamaan UMKM Kelurahan Petompon.
+                    </p>
+                </div>
+
+                <div class="media-grid">
+                    <article class="media-card">
+                        <div class="media-image">
+                            <img src="ibu 1.jpeg" alt="Kegiatan Bazar UMKM Kelurahan Petompon" loading="lazy">
+                        </div>
+                        <div class="media-content">
+                            <span class="product-tag">Kegiatan 01</span>
+                            <h3>Kegiatan Bazar UMKM Kelurahan Petompon</h3>
+                            <p>Kegiatan bazar yang dilakukan warga Petompon untuk menjual produk lokal berupa makanan.</p>
+                        </div>
+                    </article>
+
+                    <article class="media-card">
+                        <div class="media-image">
+                            <img src="ibu2.jpeg" alt="Kegiatan Pertemuan UMKM Kelurahan Petompon" loading="lazy">
+                        </div>
+                        <div class="media-content">
+                            <span class="product-tag">Kegiatan 02</span>
+                            <h3>Kegiatan Pertemuan UMKM Kelurahan Petompon</h3>
+                            <p>Perkumpulan UMKM Kelurahan Petompon Kota Semarang.</p>
+                        </div>
+                    </article>
+
+                    <article class="media-card">
+                        <div class="media-image">
+                            <img src="takjil.jpeg" alt="Pembagian Takjil oleh UMKM Petompon" loading="lazy">
+                        </div>
+                        <div class="media-content">
+                            <span class="product-tag">Kegiatan 03</span>
+                            <h3>Pembagian Takjil oleh UMKM Kelurahan Petompon</h3>
+                            <p>Pembagian takjil oleh UMKM Kelurahan Petompon dilaksanakan pada bulan Ramadhan 2026.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- INFORMASI -->
             <section class="section reveal">
-                <h2 class="section-title">Informasi</h2>
-            
-                <div id="detail-kuliner" class="card detail-item">
-                <h3>Kuliner Petompon</h3>
-                <p>Berbagai macam makanan  mulai dari kue kering ,makanan frozen ,<br>dan makanan ringan dapat dibeli dengan menghubungi nomer WhatsApp App kami</p>
-            </div>
+                <div class="section-heading">
+                    <span class="eyebrow">Informasi</span>
+                    <h2 class="section-title">Kenali Produk Kami</h2>
+                </div>
 
+                <div id="detail-kuliner" class="card detail-item">
+                    <div class="detail-icon">🍪</div>
+                    <div>
+                        <h3>Kuliner Petompon</h3>
+                        <p>
+                            Berbagai macam makanan mulai dari kue kering, makanan frozen,
+                            dan makanan ringan dapat dibeli dengan menghubungi nomor WhatsApp kami.
+                        </p>
+                    </div>
+                </div>
             </section>
+
+            <!-- CONTACT -->
             <section id="contact" class="section reveal">
-                 <div class="card contact-box">
-                <h2>Contact Me</h2>
-                <p><strong>NO.Telp : 08884197879 (Bu Rahma)</strong></p>
-            </div>
+                <div class="contact-box">
+                    <div class="contact-copy">
+                        <span class="eyebrow">Hubungi Kami</span>
+                        <h2>Siap memesan produk UMKM Petompon?</h2>
+                        <p>Hubungi Bu Rahma melalui WhatsApp untuk informasi dan pemesanan produk.</p>
+                    </div>
+
+                    <a class="btn-whatsapp" href="https://wa.me/628884197879" target="_blank" rel="noopener">
+                        <span>WhatsApp Kami</span>
+                        <span>↗</span>
+                    </a>
+                </div>
             </section>
-    </div>
+        </div>
+    </main>
 
     <footer>
-        <p>&copy;  UMKM Kelurahan Petompon Kota Semarang.</p>
+        <div class="footer-inner">
+            <p>&copy; 2026 UMKM Kelurahan Petompon Kota Semarang.</p>
+            <a href="#home">Kembali ke atas ↑</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
